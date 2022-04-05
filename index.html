@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/Css/style.css">
+	<link rel="stylesheet" href="/Css/Normalize.css">
+	<title>Туризм</title>
+	<script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+</head>
+
+<body>
+	<header class="header container">
+		<nav class="navigation">
+			<a href="#"><img class="logo" src="/Img/logotip.png" alt="Логотип в виде книжки"></a>
+			<ul class="navigation-list">
+				<li class="navigation-item"><a href="#" class="button-nav">Наши программы</a></li>
+				<li class="navigation-item"><a href="#" class="button-nav">Партнеры</a></li>
+				<li class="navigation-item"><a href="#" class="button-nav">Свяжитесь с нами сегодня</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main class="main">
+		<section class="tour container">
+			<div class="advice">
+				<div class="advice-slider">
+					<img class="advice-img" src="/Img/istanbul-s-ocean-with-cruise-ship.jpg" alt="Набережная Стамбула">
+				</div>
+				<div class="info">
+					<p class="hash"><span>#ТУРМИРСОВЕТ</span></p>
+					<h2>Закаты Стамбула</h2>
+					<p class="info-text">
+						Если окажитесь в&nbsp;Стамбуле,
+						не&nbsp;забудьте посетить местную набережную
+						чтобы лицезреть один из&nbsp;самых волшебных
+						закатов на&nbsp;нашей Земле.
+					</p>
+					<p class="info-text">
+						Местные говорят, что если загадать желение
+						во&nbsp;время того как солнце переходит через
+						границу с&nbsp;морем, то&nbsp;оно обязательно сбудится.
+					</p>
+					<p class="info-text">
+						Так&nbsp;же Вы&nbsp;можете провести вечер с&nbsp;ужиной
+						на&nbsp;пароме вдоль береговой линии, налсаждаясь
+						приятным вечерним бризом от&nbsp;моря.
+					</p>
+				</div>
+			</div>
+			<div class="choice">
+				<h2>Выбирай и&nbsp;узнавай</h2>
+				<a href="#"><img src="/Img/jonny-gios-_5dJcHWajiA-unsplash.jpg" alt="Озеро посреди гор"></a>
+				<a href="#"><img src="/Img/hans-isaacson-8vgNZFiMcs4-unsplash.jpg" alt="Ледяной холм"></a>
+			</div>
+		</section>
+		<section class="about container">
+			<h2>СКОЛЬКО ПЛЯЖЕЙ НАХОДИТСЯ В&nbsp;ЕВРОПЕ?</h2>
+			<div class="sea-info">
+				<p>Самый знаменитый и&nbsp;лучший пляж Корсики
+					расположен во&nbsp;Франции, в&nbsp;городе Порто-Веккьо,
+					на&nbsp;юго-восточном побережье.</p>
+				<p>Двухкилометровая береговая линия с&nbsp;мелким
+					золотым песком окружена горами и&nbsp;сосновым
+					лесом, в&nbsp;котором можно скрыться от&nbsp;жарких
+					солнечных лучей.</p>
+				<p>Это рай с&nbsp;прозрачной бирюзовой водой,
+					валунами розового порфира, национальным
+					колоритом и&nbsp;большим выбором развлечений,
+					включая поездки на&nbsp;катерах
+					к&nbsp;островам Cerbicales и&nbsp;Lavezzi.</p>
+				<p>Сюда часто приезжают с детьми – родителям
+					нравится чистота пляжа и плавные спуски к воде.</p>
+			</div>
+		</section>
+		<section class="mailing container">
+			<form action="#" method="get">
+				<fieldset>
+					<legend>Подпишитесь на личную рассылку</legend>
+					<div>
+						<label for="firstname">Имя</label>
+						<input type="text" id="lastname" placeholder="Иван">
+					</div>
+					<div>
+						<label for="lastname">Фамилия</label>
+						<input type="text" id="lastname" placeholder="Иванов">
+					</div>
+					<div>
+						<label for="telephone">Номер телефона</label>
+						<input type="tel" id="telephone" placeholder="+7 777 777 77 77">
+					</div>
+					<div>
+						<label for="mail">Почтовый адрес</label>
+						<input type="email" id="mail" placeholder="email@box.com">
+					</div>
+
+					<button class="button" type="submit">Отправить</button>
+				</fieldset>
+			</form>
+		</section>
+	</main>
+	<footer class="footer container">
+		<section class="footer-nav">
+			<img src="/Img/logotip.png" alt="Логотип в виде книжки">
+			<ul class="footer-list">
+				<li class="footer-item"><span><a href="#" class="button-nav">Наши программы</a></span></li>
+				<li class="footer-item"><span><a href="#">-</a></span></li>
+				<li class="footer-item"><a href="#" class="button-nav">Партнеры</a><span></span></li>
+				<li class="footer-item"><span><a href="#">-</a></span></li>
+				<li class="footer-item"><a href="#" class="button-nav">Свяжитесь с нами</a><span></span></li>
+				<li class="footer-item"><span><a href="#">-</a></span></li>
+				<li class="footer-item"><a href="#" class="button-nav">Подпишитесь на рассылку</a></li>
+			</ul>
+		</section>
+		<section class="location">
+			<div id="map" style="width:570px; height:510px"></div>
+			<div class="location-info">
+				<h2>Наши локации</h2>
+				<ul class="location-list">
+					<li class="location-item">Торговый центр Dostyk Plaza</li>
+					<li class="location-item">Торговый центр Esentai Mall</li>
+					<li class="location-item">Супермаркет Magnum Express</li>
+				</ul>
+				<p>За&nbsp;всей дополнительной информацией
+					можно обращаться по&nbsp;телефонам:</p>
+				<ul class="telephone-list">
+					<li class="telephone-item">+7 777 777 77 77</li>
+					<li class="telephone-item">+7 777 777 77 77</li>
+					<li class="telephone-item">+7 777 777 77 77</li>
+				</ul>
+			</div>
+		</section>
+		<script src="/Js/script.js"></script>
+	</footer>
+</body>
+
+</html>

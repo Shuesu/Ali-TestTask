@@ -1,0 +1,338 @@
+body {
+	font-family: Jost;
+}
+
+/* fonts */
+@font-face {
+	font-family: Jost; /* Имя шрифта */
+	src: url(/Fonts/Jost-VariableFont_wght.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+	font-family: Jost-italic; /* Имя шрифта */
+	src: url(/Fonts/Jost-Italic-VariableFont_wght.ttf); /* Путь к файлу со шрифтом */
+}
+
+/* container & media*/
+.container {
+	padding: 0 15px;
+}
+
+@media (min-width: 575.98px) {
+	.container {
+		padding: 0 calc(50vw - 270px);
+	}
+	.header {
+		height: 300px;
+	}
+}
+
+@media (min-width: 767.98px) {
+	.container {
+		padding: 0 calc(50vw - 360px);
+	}
+	.header {
+		height: 400px;
+	}
+}
+
+@media (min-width: 991.98px) {
+	.container {
+		padding: 0 calc(50vw - 420px);
+	}
+	.header {
+		height: 600px;
+	}
+}
+
+@media (min-width: 1199.98px) {
+	.container {
+		padding: 0 calc(50vw - 500px);
+	}
+	.header {
+		height: 755px;
+	}
+
+}
+
+@media (min-width: 1699.98px) {
+	.header {
+		height: 955px;
+	}
+}
+
+/* header */
+.header {
+	background: url("/Img/will-rust-BUg1gJpkPcc-unsplash.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+.navigation {
+	display: grid;
+	grid-template-columns: 250px 1fr;
+	align-items: center;
+	padding: 30px;
+}
+
+.logo{
+	width: 84px;
+	height: 84px;
+}
+
+ .navigation-list{
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+	text-transform: uppercase;
+
+	font-size: 18px;
+}
+
+.navigation-item a {
+	text-decoration: none;
+	color: #fff;
+} 
+
+
+/* main */
+/* Tour */
+.tour {
+	padding-top: 35px;
+	padding-bottom: 0;
+	background-image: url("/Img/groovepaper.png");
+	padding-bottom: 35px;
+}
+
+/* advice */
+.advice {
+	display: grid;
+	grid-template-columns: 365px 1fr;
+	background-color: #fff;
+}
+
+.advice-slider {
+   height: 533px;
+	position: relative;
+	overflow:hidden;
+}
+
+.advice-img{
+	position: absolute;
+   top:50%;
+   left:50%;
+   transform:translate(-50%,-50%);
+   height:533px;
+   object-fit:cover;
+}
+
+.info {
+	margin-left: 30px;
+	padding-right: 130px;
+}
+
+.info-text {
+	margin-top: -5px;
+	font-size: 24px;
+	color: #1e1e1e;
+}
+
+.info h2 {
+	color: #93a2ad;
+	font-size: 48px;
+	margin-top: 10px;
+}
+
+.hash {	
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+.hash span {
+	background-color: #fbd42c;
+}
+
+/* choice */
+.choice {
+	position: relative;
+}
+
+.choice h2 {
+	position: absolute;
+	top: 30%;
+	left: 35%;
+	background-color:#fbd42c;
+	width: 8em;
+   height: 8em;
+	padding-top: 2.8em;
+	padding-left: 1.7em;
+	box-sizing: border-box; 
+	text-transform: uppercase;
+	border-radius: 50%;
+	font-size: 35px;
+	vertical-align: middle;
+	
+}
+
+.choice img {
+	width: 50%;
+	height: 720px;
+	display: inline-block;
+	margin-right: -5px;
+	margin-top: 40px;
+}
+
+/* about */
+
+.about {
+	background-image: url("/Img/jalome-chirwa-7kVX9VW1S8k-unsplash.jpg");
+	background-size:cover;
+	color: #fff;
+	display: grid;
+	grid-template-columns: 40% 50%;
+	padding-top:230px;
+	padding-bottom:180px;
+}
+
+.about h2{
+	padding-left: 30px;
+	font-size: 60px;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+.sea-info{
+	padding-left: 100px;
+	font-size: 18px;
+}
+
+/* mailing */
+
+.mailing {
+	margin-top: 75px;
+	margin-bottom: 70px;
+}
+
+.mailing fieldset {
+   border: 0 none;
+	font-size: 24px;
+	font-weight: 300;
+	max-width: 800px;
+	display: grid;
+	grid-template-columns: 255px 255px;
+	gap: 5px;
+}
+
+.mailing label {
+	display: block;
+	color: #1e1e1e;
+	margin-bottom: 5px;
+}
+
+.mailing legend {
+	font-size: 48px;
+	color: #93a2ad;
+	margin-bottom: 20px;
+}
+
+.mailing input {
+	background-color: #e3e6e9;
+	border: 0 none;
+	margin-bottom: 15px;
+}
+
+.mailing button {
+	background-color: #fbd42c;
+	border: 0 none;
+	text-transform: uppercase;
+	padding: 10px;
+	max-width: 210px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+/* footer */
+
+.footer {
+	background-color: #000;
+	padding-top: 65px;
+	padding-bottom: 40px;
+}
+
+.footer-nav {
+	text-align: center;
+}
+
+.footer-nav img {
+	margin-bottom: 30px;
+}
+
+.footer-nav ul {
+	display: flex;
+	list-style: none;
+}
+
+.footer-nav a {
+	text-decoration: none;
+	color: #d1d1d1;
+	text-transform: uppercase;
+}
+
+.footer-item{
+	margin-right: 40px;
+}
+
+/* location */
+
+.location {
+	padding: 40px;
+	display: grid;
+	grid-template-columns: 1fr 380px;
+}
+
+.location-info {
+	color: #fff;
+	margin-top: -30px;
+	margin-left: 40px;
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.location-info li {
+	list-style: none;
+	margin-left: -40px;
+}
+
+.location-item{
+	line-height: 30px;
+}
+
+.location-item::before {
+	content: "";
+	width: 10px;
+	height: 3px;
+	background-color: #fbd42c;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 20px;
+}
+
+.location-info h2{
+	color: #fbd42c;
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: 500;
+}
+
+
+.button-nav:hover {
+	color: #51575c;
+}
+
+button {
+	transition-duration: .3s;
+}
+.button:hover {
+	background-color: #a68906;
+	
+}
